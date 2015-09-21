@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="blueRed" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="maidis-Vertical-Striped-Hot-Air-Balloons-800px" translatesAutoresizingMaskIntoConstraints="NO" id="HDu-W5-hhm">
+                                <rect key="frame" x="227" y="128" width="104" height="82"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdI-LP-AJG">
+                                <rect key="frame" x="30" y="280" width="117" height="30"/>
+                                <state key="normal" title="Hide Red Balloon"/>
+                                <connections>
+                                    <action selector="hideRed:" destination="BYZ-38-t0r" eventType="touchDown" id="zb2-wz-kQn"/>
+                                    <action selector="unHideRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lxU-iI-MIw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nS-cY-fTB">
+                                <rect key="frame" x="206" y="280" width="125" height="30"/>
+                                <state key="normal" title="Hide Blue Balloon"/>
+                                <connections>
+                                    <action selector="hideBlue:" destination="BYZ-38-t0r" eventType="touchDown" id="KbB-hq-32W"/>
+                                    <action selector="unHideBlue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xkd-TV-elD"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hot-air-balloon-800px" translatesAutoresizingMaskIntoConstraints="NO" id="FyE-x1-Pu7">
+                                <rect key="frame" x="50" y="10" width="97" height="82"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="blueBalloon" destination="HDu-W5-hhm" id="gXV-b1-uEE"/>
+                        <outlet property="redBalloon" destination="FyE-x1-Pu7" id="0Mj-8F-vYQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="399.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hot-air-balloon-800px" width="596" height="800"/>
+        <image name="maidis-Vertical-Striped-Hot-Air-Balloons-800px" width="486" height="800"/>
+    </resources>
+</document>
